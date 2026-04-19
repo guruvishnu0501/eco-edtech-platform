@@ -57,7 +57,7 @@ function App() {
     setError(null);
 
     try {
-      const res = await fetch('http://127.0.0.1:8000/generate-quiz', {
+      const res = await fetch('https://eco-edtech-platform.onrender.com/generate-quiz', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ topic }),
@@ -108,7 +108,7 @@ function App() {
 
     try {
       // Target Study Plan Generation
-      const responsePromise = fetch('http://127.0.0.1:8000/generate-study-plan', {
+      const responsePromise = fetch('https://eco-edtech-platform.onrender.com/generate-study-plan', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ topic: topic, quiz_score: finalScore, low_bandwidth: isLowBandwidth }),
