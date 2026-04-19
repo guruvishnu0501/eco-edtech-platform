@@ -2,7 +2,7 @@
 
 A full-stack, AI-driven educational platform designed to generate personalized study plans and dynamic quizzes while promoting digital sustainability through a gamified, real-time leaderboard.
 
-**[🚀 View Live Demo](#)** *(<- Replace the # with your actual Vercel URL!)*
+**[🚀 View Live Demo](https://eco-edtech-frontend.vercel.app/)** *(<- Replace the # with your actual Vercel URL!)*
 
 ## ✨ Key Features
 
@@ -43,7 +43,43 @@ A full-stack, AI-driven educational platform designed to generate personalized s
 * A Firebase Project with Authentication and Firestore enabled
 
 ### 1. Clone the Repository
-```bash
+```
 git clone [https://github.com/YOUR_USERNAME/eco-edtech-platform.git](https://github.com/YOUR_USERNAME/eco-edtech-platform.git)
 cd eco-edtech-platform
 ```
+
+### 2. Backend Setup
+```
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Create a .env file in the root directory and add your API key:
+# GEMINI_API_KEY="your_actual_api_key_here"
+
+# Start the FastAPI server
+uvicorn main:app --reload
+```
+## The API will be available at http://localhost:8000
+
+### 3. Frontend Setup
+```
+# Navigate to the frontend directory
+cd frontend
+
+# Install Node dependencies
+npm install
+
+# Start the React development server
+npm start
+```
+
+## The app will be available at http://localhost:3000
+
+### 📁 Project Structure
+/ - Root directory containing the FastAPI backend (main.py) and Python environment requirements.
+
+/frontend - Contains the React application, Tailwind configuration, and Firebase client SDK setup.
+
+### 🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
